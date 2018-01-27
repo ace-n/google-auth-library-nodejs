@@ -36,6 +36,7 @@ export class Compute extends OAuth2Client {
    * See: https://developers.google.com/compute/docs/authentication
    */
   constructor(options?: ComputeOptions) {
+    console.log('MY URL', _GOOGLE_OAUTH2_TOKEN_URL);
     super(options);
     // Start with an expired refresh token, which will automatically be
     // refreshed before the first API call is made.
